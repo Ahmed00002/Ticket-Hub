@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticket</title>
+    <link rel="stylesheet" href="style/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <!-- font pro -->
+
+  <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-462758aa1e172f82d39e1ea35e919e0a.css?vsn=d"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+  />
+  <body>
+    <header class="max-w-[1440px] mx-auto px-32">
+      <!-- navigation bar -->
+      <nav class="grid grid-cols-3 mt-12">
+        <div class="text-4xl font-bold grid items-center">
+          <h1>Ticket Hub</h1>
+        </div>
+        <div
+          class="grid place-items-center text-lg text-fontColor font-semibold"
+        >
+          <ul class="flex gap-14">
+            <li class="text-primaryColor cursor-pointer">Home</li>
+            <li class="hover:text-primaryColor cursor-pointer">About</li>
+            <li class="hover:text-primaryColor cursor-pointer">Destination</li>
+            <li class="hover:text-primaryColor cursor-pointer">Search</li>
+          </ul>
+        </div>
+        <div class="text-right">
+          <button
+            class="btn text-lg font-bold border-2 border-primaryColor bg-accentBlue text-primaryColor hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor"
+          >
+            Bus <i class="fa-solid fa-van-shuttle"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- hero section start -->
+      <div class="mt-9 font-inter">
+        <div
+          class="text-center space-y-8 bg-header rounded-3xl h-[550px] flex flex-col items-center justify-center"
+        >
+          <h1 class="text-6xl font-railway font-bold text-white">
+            End-to-End Travel with <br />
+            <span class="text-primaryColor">P Paribahan</span>
+          </h1>
+          <p class="w-3/6 mx-auto font-inter text-white">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="btn bg-primaryColor border-transparent text-accentColor text-xl hover:bg-transparent hover:text-primaryColor hover:border-2 hover:border-primaryColor"
+          >
+            Buy Tickets
+          </button>
+        </div>
+
+        <!-- status section -->
+        <div class="grid grid-cols-3 gap-6 transform -translate-y-1/2 px-28">
+          <!-- total user -->
+          <div
+            class="flex bg-white border-b-2 border-primaryColor rounded-3xl justify-center items-center space-x-2 py-8"
+          >
+            <div><img src="images/people.png" alt="total people images" /></div>
+            <div class="space-y-1">
+              <h1 class="text-4xl font-bold">500k</h1>
+              <p class="text-lg text-fontColor">Registered Users</p>
+            </div>
+          </div>
+
+          <!-- ticket sold -->
+          <div
+            class="flex bg-white border-b-2 border-primaryColor rounded-3xl justify-center items-center space-x-2 py-8"
+          >
+            <div>
+              <img src="images/ticket-cupon.png" alt="ticket cupon images" />
+            </div>
+            <div class="space-y-1">
+              <h1 class="text-4xl font-bold">1.7 lacks</h1>
+              <p class="text-lg text-fontColor">Tickets sold</p>
+            </div>
+          </div>
+
+          <!-- rental partners -->
+          <div
+            class="flex bg-white border-b-2 border-primaryColor rounded-3xl justify-center items-center space-x-2 py-8"
+          >
+            <div>
+              <img class="" src="images/stoppage.png" alt="bus icon image" />
+            </div>
+            <div class="space-y-1">
+              <h1 class="text-4xl font-bold">80k+</h1>
+              <p class="text-lg text-fontColor">Rental Partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- voucher section -->
+      <section class="max-w-[1440px] mx-auto px-32">
+        <!-- section title -->
+        <div class="text-center mt-14 mb-12">
+          <h1 class="text-4xl font-railway font-bold">Best Offers for you</h1>
+        </div>
+
+        <!-- cupon container -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- cupon 1 -->
+          <div class="grid grid-cols-12 bg-[#FFBF0F] rounded-3xl">
+            <div
+              class="col-span-7 p-12 font-inter flex flex-col justify-center h-full"
+            >
+              <h1 class="text-3xl font-bold">15% OFF</h1>
+              <h3 class="text-lg text-fontColor font-semibold">
+                on your next purchase
+              </h3>
+              <p class="text-base font-light">use by February 2024</p>
+            </div>
+            <!-- divider -->
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <div
+                class="rounded-bl-full rounded-br-full bg-white w-8 h-6"
+              ></div>
+              <div
+                class="w-[1px] h-full border-l-2 border-dashed border-white"
+              ></div>
+
+              <div
+                class="rounded-tl-full rounded-tr-full bg-white w-8 h-6"
+              ></div>
+            </div>
+
+            <!-- cupon code -->
+            <div class="col-span-4 flex flex-col justify-center items-center">
+              <h1 class="text-2xl font-bold font-railway">NEW15</h1>
+              <p class="text-base font-inter font-light">Coupon Code</p>
+            </div>
+          </div>
+          <!-- cupon 2 -->
+          <div class="grid grid-cols-12 bg-[#F78C9C] rounded-3xl">
+            <div
+              class="col-span-7 p-12 font-inter flex flex-col justify-center h-full"
+            >
+              <h1 class="text-3xl font-bold">20% OFF</h1>
+              <h3 class="text-xl text-fontColor font-semibold">
+                on your next purchase
+              </h3>
+              <p class="text-base font-light">use by February 2024</p>
+            </div>
+            <!-- divider -->
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <div
+                class="rounded-bl-full rounded-br-full bg-white w-8 h-6"
+              ></div>
+              <div
+                class="w-[1px] h-full border-l-2 border-dashed border-white"
+              ></div>
+
+              <div
+                class="rounded-tl-full rounded-tr-full bg-white w-8 h-6"
+              ></div>
+            </div>
+            <!-- cupon code -->
+            <div class="col-span-4 flex flex-col justify-center items-center">
+              <h1 class="text-2xl font-bold font-railway">COUPLE20</h1>
+              <p class="text-base font-inter font-light">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- see all offers button -->
+        <div class="text-center mt-12">
+          <button
+            class="btn border-2 border-primaryColor bg-transparent hover:bg-primaryColor hover:text-accentColor hover:border-transparent text-lg text-primaryColor"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+
+      <!-- sit booking section -->
+      <section
+        class="bg-[#F7F8F8] border-t-4 rounded-tl-[88px] rounded-tr-[88px] border-primaryColor mt-28 pb-28"
+      >
+        <!-- container -->
+        <div class="max-w-[1440px] mx-auto px-32">
+          <!-- car details section -->
+          <div class="mt-28 mb-6">
+            <div class="text-center space-y-2">
+              <h1 class="text-4xl font-railway font-bold text-accentColor">
+                P.H Paribahan
+              </h1>
+              <p class="w-4/6 mx-auto text-fontColor text-lg">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+            </div>
+            <!-- bus details -->
+            <div class="grid grid-cols-12 shadow-md bg-white mt-20 rounded-3xl">
+              <div class="col-span-8 p-8">
+                <!-- bus name and seats -->
+                <div class="flex gap-2 justify-between">
+                  <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-van-shuttle text-5xl"></i>
+
+                    <div>
+                      <h1 class="text-3xl font-bold font-railway">
+                        Greenline Paribahan
+                      </h1>
+                      <p class="text-lg font-inter text-fontColor">
+                        Coach-009-WEB ! AC_Business
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- total seat count -->
+                  <div class="flex items-center justify-center">
+                    <div
+                      class="flex gap-2 font-bold font-inter h-auto text-lg items-center bg-accentBlue rounded-xl px-4 py-3 text-primaryColor"
+                    >
+                      <img class="h-6" src="images/seat-green.png" alt="" />
+                      <span id="totalSeat">40</span> Seats left
+                    </div>
+                  </div>
+                </div>
+
+                <!-- trip info -->
+                <div
+                  class="bg-secondaryColor p-8 font-inter mt-6 rounded-3xl space-y-6"
+                >
+                  <div
+                    class="flex justify-between border-b-2 border-gray-200 border-dashed pb-6"
+                  >
+                    <p class="text-lg text-transparentColor">Route</p>
+
+                    <p class="text-lg text-fontColor font-semibold">
+                      Dhaka - Sylhet
+                    </p>
+                  </div>
+                  <!-- departure time -->
+                  <div
+                    class="flex justify-between border-b-2 border-gray-200 border-dashed pb-7"
+                  >
+                    <p class="text-lg text-transparentColor">Departure Time</p>
+
+                    <p class="text-lg text-fontColor font-semibold">9:00 PM</p>
+                  </div>
+                  <!-- more info -->
+                  <div class="flex gap-4">
+                    <div
+                      class="px-4 py-4 bg-infoColor rounded-xl font-lg font-inter font-medium"
+                    >
+                      Boarding Point - Laxmipur
+                    </div>
+                    <div
+                      class="px-4 py-4 bg-infoColor rounded-xl font-lg font-inter font-medium"
+                    >
+                      Dropping Point - Bogura
+                    </div>
+                    <div
+                      class="px-4 py-4 bg-infoColor rounded-xl font-lg font-inter font-medium"
+                    >
+                      Est. Time - 11 Hour
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- divider -->
+              <div class="col-span-1 flex flex-col justify-center items-center">
+                <div
+                  class="rounded-bl-full rounded-br-full bg-[#F7F8F8] w-16 h-12"
+                ></div>
+                <div
+                  class="w-[1px] h-full border-l-2 border-dashed my-3 border-primaryColor"
+                ></div>
+
+                <div
+                  class="rounded-tl-full rounded-tr-full bg-[#F7F8F8] w-16 h-12"
+                ></div>
+              </div>
+
+              <!-- per seat cost section -->
+              <div
+                class="col-span-3 flex flex-col justify-center items-center space-y-2"
+              >
+                <div
+                  class="h-[40px] w-[40px] text-center text-white text-2xl rounded-full bg-primaryColor grid place-content-center"
+                >
+                  $
+                </div>
+                <h1 class="text-3xl font-railway font-bold text-accentColor">
+                  550TK
+                </h1>
+                <p class="font-inter text-fontColor text-lg">Per Seat</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- seat buy section -->
+          <div class="grid grid-cols-12 bg-white p-8 rounded-3xl shadow-md">
+            <div class="col-span-7 pr-8">
+              <h1 class="text-2xl font-bold font-railway mb-6">
+                Select Your Seat
+              </h1>
+
+              <!-- selected and available hint -->
+              <div
+                class="flex justify-between py-4 border-y-2 border-dashed border-[rgba(3, 7, 18, 0.2)]"
+              >
+                <div
+                  class="flex gap-2 items-center text-lg font-semibold text-transparentColor"
+                >
+                  <img
+                    class="h-7"
+                    src="images/seat-gray.png"
+                    alt="available seat"
+                  />
+                  <p>Available</p>
+                </div>
+                <div
+                  class="flex gap-2 items-center text-primaryColor font-semibold"
+                >
+                  <img
+                    class="h-7"
+                    src="images/seat-green-filled.png"
+                    alt="available seat"
+                  />
+                  <p class="text-lg">Selected</p>
+                </div>
+              </div>
+
+              <!-- steering wheel -->
+              <div class="flex justify-end py-6">
+                <div
+                  class="text-2xl text-fontColor bg-infoColor px-10 py-2 rounded-xl"
+                >
+                  <i class="fa-regular fa-steering-wheel"></i>
+                </div>
+              </div>
+
+              <!-- seats -->
+              <div>
+                <div class="text-lg space-y-6">
+                  <!-- seat A -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>A</p>
+                      <button
+                        id="seat-a1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        A1
+                      </button>
+                      <button
+                        id="seat-a2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        A2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-a3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        A3
+                      </button>
+                      <button
+                        id="seat-a4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        A4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat b -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>B</p>
+                      <button
+                        id="seat-b1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        B1
+                      </button>
+                      <button
+                        id="seat-b2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        B2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-b3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        B3
+                      </button>
+                      <button
+                        id="seat-b4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        B4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat C -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>C</p>
+                      <button
+                        id="seat-c1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        C1
+                      </button>
+                      <button
+                        id="seat-c2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        C2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-c3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        C3
+                      </button>
+                      <button
+                        id="seat-c4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        C4
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- seat D -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>D</p>
+                      <button
+                        id="seat-d1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        D1
+                      </button>
+                      <button
+                        id="seat-d2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        D2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-d3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        D3
+                      </button>
+                      <button
+                        id="seat-d4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        D4
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- seat E -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>E</p>
+                      <button
+                        id="seat-e1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        E1
+                      </button>
+                      <button
+                        id="seat-e2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        E2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-e3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        E3
+                      </button>
+                      <button
+                        id="seat-e4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        E4
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- seat F -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>F</p>
+                      <button
+                        id="seat-f1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        F1
+                      </button>
+                      <button
+                        id="seat-f2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        F2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-f3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        F3
+                      </button>
+                      <button
+                        id="seat-f4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        F4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat G -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>G</p>
+                      <button
+                        id="seat-g1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        G1
+                      </button>
+                      <button
+                        id="seat-g2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        G2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-g3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        G3
+                      </button>
+                      <button
+                        id="seat-g4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        G4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat H -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p>H</p>
+                      <button
+                        id="seat-h1"
+                        h1
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        H1
+                      </button>
+                      <button
+                        id="seat-h2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        H2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-h3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        H3
+                      </button>
+                      <button
+                        id="seat-h4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        H4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat I -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p class="px-1">I</p>
+                      <button
+                        id="seat-i1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        I1
+                      </button>
+                      <button
+                        id="seat-i2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        I2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-i3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        I3
+                      </button>
+                      <button
+                        id="seat-i4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        I4
+                      </button>
+                    </div>
+                  </div>
+                  <!-- seat J -->
+                  <div class="flex justify-between">
+                    <div class="flex gap-8 items-center">
+                      <p class="px-1">J</p>
+                      <button
+                        id="seat-j1"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        J1
+                      </button>
+                      <button
+                        id="seat-j2"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        J2
+                      </button>
+                    </div>
+                    <div class="flex gap-8">
+                      <button
+                        id="seat-j3"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        J3
+                      </button>
+                      <button
+                        id="seat-j4"
+                        class="btn w-28 py-2 hover:bg-primaryColor hover:text-white"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+                  <dialog id="sit-selected-noti" class="modal">
+                    <div
+                      class="modal-box text-center border-b-8 border-red-500 space-y-0"
+                    >
+                      <iframe
+                        class="w-[100%] h-[200px]"
+                        src="https://lottie.host/embed/d5fa64e1-29e8-4c5b-b982-862c7aa7b684/PGgfYtPliD.json"
+                      ></iframe>
+
+                      <h3 id="modal-title" class="text-lg font-bold">
+                        Hey There
+                      </h3>
+                      <p id="modal-message" class="py-4"></p>
+
+                      <div
+                        class="modal-action text-center flex justify-center items-center"
+                      >
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                            class="btn px-12 py-1 bg-primaryColor text-black"
+                          >
+                            OK
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+
+            <!-- book section -->
+            <div
+              class="col-span-5 border-l-2 border-dashed border-dividerColor pl-8"
+            >
+              <h1
+                class="text-2xl font-bold font-railway mb-6 pb-6 border-b-2 border-dashed border-[rgba(3, 7, 18, 0.2)]"
+              >
+                Book Your Seat
+              </h1>
+
+              <!-- total count -->
+              <div class="font-inter bg-[#F7F8F8] rounded-3xl p-8">
+                <!-- seat details header -->
+                <div
+                  class="flex justify-between text-base font-bold pb-4 border-b-2 border-dashed border-[rgba(3, 7, 18, 0.2)]"
+                >
+                  <p>
+                    Seat
+                    <span
+                      id="seat-count"
+                      class="p-1 py-[1px] text-white bg-primaryColor rounded-full text-sm"
+                      >0</span
+                    >
+                  </p>
+                  <p>Class</p>
+                  <p>Price</p>
+                </div>
+
+                <!-- booked seat list -->
+                <div>
+                  <ul id="booked-seat-list"></ul>
+                </div>
+
+                <!-- nothing booked -->
+                <div
+                  id="nothing-selected"
+                  class="text-center text-3xl font-bold text-[#ff5861] py-4"
+                >
+                  <h1>No Seat Booked</h1>
+                </div>
+
+                <!-- total price cunt -->
+                <div
+                  class="flex justify-between text-base font-bold py-4 border-t-2 border-dashed border-[rgba(3, 7, 18, 0.2)]"
+                >
+                  <p>Total</p>
+                  <p>BDT <span id="total-seat-price">0</span></p>
+                </div>
+
+                <!-- cupon box -->
+                <div
+                  id="cupon-box"
+                  class="flex justify-center items-center p-2 bg-white rounded-xl font-inter"
+                >
+                  <input
+                    class="outline-none h-full w-full px-3 font-base"
+                    type="text"
+                    name="cupon-code"
+                    id="cupon-code"
+                    placeholder="Have any copupon?"
+                    disabled
+                  />
+                  <button
+                    id="cupon-btn"
+                    class="btn px-5 py-3 text-base font-bold text-white bg-primaryColor hover:bg-green-500"
+                    disabled
+                  >
+                    Apply
+                  </button>
+                </div>
+                <!-- discount amount -->
+                <div
+                  id="discount-contaner"
+                  class="flex justify-between border-y-2 border-dashed border-[rgba(3, 7, 18, 0.2)] text-base font-bold py-4 hidden"
+                >
+                  <p>Discount</p>
+                  <p>- BDT <span id="discount-amount">0</span></p>
+                </div>
+
+                <!-- grand total after discount -->
+                <div class="flex justify-between text-base font-bold pt-4">
+                  <p>Grand Total</p>
+                  <p>BDT <span id="grand-total">0</span></p>
+                </div>
+              </div>
+              <!-- total count end -->
+
+              <!-- Passenger details -->
+              <div class="mt-6">
+                <form action="#">
+                  <div class="space-y-6">
+                    <div>
+                      <label class="block text-base font-bold mb-4" for="name"
+                        >Passenger Name*</label
+                      >
+                      <input
+                        class="w-full p-6 rounded-xl outline-none border-2 border-solid"
+                        type="text"
+                        name="passenger-name"
+                        id="passenger-name"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label class="block text-base font-bold mb-4" for="name"
+                        >Passenger Phone*</label
+                      >
+                      <input
+                        class="w-full p-6 rounded-xl outline-none border-2 border-solid"
+                        type="number"
+                        name="passenger-mobile"
+                        id="passenger-name"
+                        placeholder="Enter your phone number"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label class="block text-base font-bold mb-4" for="name"
+                        >Email ID</label
+                      >
+                      <input
+                        class="w-full p-6 rounded-xl outline-none border-2 border-solid"
+                        type="email"
+                        name="passenger-email"
+                        id="passenger-name"
+                        placeholder="Enter your email id"
+                        required
+                      />
+                    </div>
+
+                    <input
+                      type="submit"
+                      value="Next"
+                      class="btn w-full py-3 bg-primaryColor text-white rounded-xl font-bold text-base hover:bg-black cursor-pointer"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-accentColor">
+      <!-- footer container div -->
+      <div class="max-w-[1440px] mx-auto p-32 text-white">
+        <!-- logo and app download -->
+        <div
+          class="flex justify-between border-b-[1px] border-dashed pb-8 border-[#FFFFFF4D]"
+        >
+          <div class="space-y-4">
+            <h1 class="text-4xl font-bold font-railway">Ticket Hub</h1>
+            <p class="font-inter text-lg font-light w-4/6">
+              Ticket Hub is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+          <!-- download app icon -->
+          <div>
+            <h1 class="text-LG font-railway">Download ouR app</h1>
+            <div
+              class="flex gap-2 bourder-2 items-center mt-5 border-[1px] border-white px-4 py-1 rounded-xl text-right font-inter cursor-pointer"
+            >
+              <img
+                class="h-10"
+                src="images/playstore.png"
+                alt="playstore logo"
+              />
+              <div class="text-left">
+                <p class="text-base">GET IT ON</p>
+                <p class="text-xl font-semibold">Google Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- logo and app download end -->
+
+        <!-- copyright -->
+        <div class="mt-8 flex justify-between">
+          <div>
+            <small class="text-white font-thin"
+              >@all rights reserved, Ticket Hub services limited.2024</small
+            >
+          </div>
+
+          <!-- terms and condtion -->
+          <div>
+            <ul class="flex gap-8 text-base">
+              <li class="cursor-pointer">Terms & condition</li>
+              <li class="cursor-pointer">Return & refund policy</li>
+              <li class="cursor-pointer">Privacy policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
+  </body>
+</html>

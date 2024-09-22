@@ -1,0 +1,18 @@
+/* railway font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-header {
+  background: linear-gradient(
+      180deg,
+      rgba(3, 7, 18, 0.5),
+      rgba(3, 7, 18, 0) 100%
+    ),
+    url(1), url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
